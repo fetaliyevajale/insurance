@@ -7,6 +7,8 @@ import Section from "./Section";
 import Footer from "./Footer";
 import FooterAside from "./FooterAside";
 import FooterFoot from "./FooterFoot";
+import InsurancePopup from "../components/InsurancePopup";
+
 export default function Home() {
   const navigate = useNavigate();
   const [showDescriptions, setShowDescriptions] = useState({
@@ -15,9 +17,14 @@ export default function Home() {
     bank: false,
     privacy: false,
   });
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleGetStart = () => {
-    navigate("/insurance-popup");
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
   };
 
   const toggleDescription = (key) => {
@@ -36,7 +43,6 @@ export default function Home() {
             We work with you to customize a policy that fits your budget and
             your needs. And we're always available to help if you have a claim.
           </h5>
-
           <button className="HomeBtn" onClick={handleGetStart}>
             Get start
           </button>
@@ -77,7 +83,7 @@ export default function Home() {
           <h5>Car insurance</h5>
           <h6>
             This type of insurance protects you financially in the event of an
-            accident. 
+            accident.
           </h6>
         </div>
 
@@ -99,7 +105,7 @@ export default function Home() {
           <h5>Business insurance</h5>
           <h6>
             This type of insurance protects your business from financial losses
-            due to things{" "}
+            due to things
           </h6>
         </div>
 
@@ -122,8 +128,11 @@ export default function Home() {
       <Content />
       <Section />
       <Footer />
-      <FooterAside/>
-      < FooterFoot />
+      <FooterAside />
+      <FooterFoot />
+
+      {/* Modalı daxil edin */}
+      <InsurancePopup isOpen={isPopupOpen} onClose={closePopup} />
     </div>
   );
 }
