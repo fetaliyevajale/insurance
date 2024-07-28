@@ -3832,6 +3832,7 @@ form input {
   font-size: 18px;
   line-height: 26px;
 }
+
 .insurance-popup-child {
   display: flex;
   align-items: start;
@@ -3841,7 +3842,7 @@ form input {
   margin-top: 50px;
 }
 
-.popup_table{
+.popup_table {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3850,7 +3851,8 @@ form input {
   cursor: pointer;
   position: relative;
 }
-.table_srql{
+
+.table_srql {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -3862,19 +3864,21 @@ form input {
   position: relative;
   z-index: 1000;
 }
-.insurace_right{
+
+.insurace_right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.popup_table h5{
+
+.popup_table h5 {
   width: 130px;
   color: #171717;
-font-family: "General Sans";
-font-size: 18px;
-font-weight: 500;
-line-height: 26px; 
+  font-family: "General Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
 }
 
 
@@ -3883,24 +3887,122 @@ line-height: 26px;
 }
 
 .selected .table_srql {
-  background: #6ADAB3; 
+  background: #6ADAB3;
 }
 
 .selected .table_srql img {
   display: block;
 }
 
-.border_popup{
+.border_popup {
   width: 1px;
   height: 460px;
-  border:  solid 1px rgb(212, 212, 212);
+  border: solid 1px rgb(212, 212, 212);
   margin-left: 10px;
 }
-.inurance_border{
+
+.inurance_border {
   width: 1px;
   height: 90px;
-  border:  solid 1px gainsboro;
+  border: solid 1px gainsboro;
   position: absolute;
   margin-left: 15px;
   margin-bottom: 10px;
+}
+
+.insurance_popup_child {
+  display: flex;
+  flex-direction: column;
+}
+
+.table_srql img {
+  width: 18px;
+  height: 18px;
+}
+
+.insurance,
+.time_date,
+.contact_info {
+  display: none;
+}
+
+.insurance.visible,
+.time_date.visible,
+.contact_info.visible {
+  display: block;
+}
+
+.insurance {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  margin-left: 20px;
+}
+
+.insurance_child {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.insurance_child-srql {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: solid 1px gainsboro;
+  background-color: white;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.insurance_child-srql.active {
+  background-color: #6ADAB3;
+}
+
+.insurance_child h6 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.insurance h5 {
+  width: 374px;
+  color: #525252;
+  font-family: "General Sans";
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 40px;
+}
+
+.insurance,
+.time_date,
+.contact_info {
+  display: none;
+}
+
+.insurance.visible,
+.time_date.visible,
+.contact_info.visible {
+  display: block;
+}
+
+.insurance_child-srql_btn {
+  width: 110px;
+  height: 35px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 24px;
+background: #6ADAB3;
+border: none;
+margin-top: 30px;
+margin-left: 300px;
 }
