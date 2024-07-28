@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import "../index.css"; // Modal üçün stil əlavə edin
+import Calendar from 'react-calendar'; 
+import 'react-calendar/dist/Calendar.css'; 
+import "../index.css"; 
+import LocationSelect from './LocationSelect';
 
 function InsurancePopup({ isOpen, onClose }) {
-  const [selectedTable, setSelectedTable] = useState(1); // Default olaraq 1-ci səhifə açıqdır
-  const [activeChild, setActiveChild] = useState(null); // Hansı `insurance_child-srql` tıklanıb
+  const [selectedTable, setSelectedTable] = useState(1);
+  const [activeChild, setActiveChild] = useState(null);
+  const [date, setDate] = useState(new Date());
 
   if (!isOpen) return null;
 
@@ -13,6 +17,12 @@ function InsurancePopup({ isOpen, onClose }) {
 
   const handleChildClick = (index) => {
     setActiveChild(index);
+  };
+
+  // Tarixi formatlamaq üçün köməkçi funksiya
+  const formatDate = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString(undefined, options);
   };
 
   return (
@@ -126,7 +136,16 @@ function InsurancePopup({ isOpen, onClose }) {
         </div>
 
         <div className={`time_date ${selectedTable === 2 ? 'visible' : ''}`}>
-          <p>Date & Time: Choose your preferred date and time for the call.</p>
+          <p>Select Date & Time</p>
+          <Calendar
+            onChange={setDate}
+            value={date}
+          />
+          <LocationSelect />
+          <div className="time">
+            <h3>{formatDate(date)}</h3>
+            <h4></h4>
+          </div>
         </div>
 
         <div className={`contact_info ${selectedTable === 3 ? 'visible' : ''}`}>
