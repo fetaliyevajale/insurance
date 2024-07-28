@@ -3716,7 +3716,7 @@ form input {
 
   form label {
     width: 100%;
-    margin-right:90px;
+    margin-right: 90px;
   }
 
   form input {
@@ -3737,10 +3737,11 @@ form input {
     width: 120px;
     height: 35px;
     font-size: 14px;
-   margin-right: 80px;
+    margin-right: 80px;
   }
 }
 
+/* insurance hissesi */
 .insurance-popup-overlay {
   position: fixed;
   top: 0;
@@ -3751,7 +3752,8 @@ form input {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1000; /* Üzərindəki digər elementlərdən üstündə olmasını təmin edir */
+  z-index: 1000;
+  /* Üzərindəki digər elementlərdən üstündə olmasını təmin edir */
 }
 
 .insurance-popup-content {
@@ -3774,7 +3776,7 @@ form input {
 }
 
 
-/* index.css */
+
 
 /* Modal overlay */
 .modal-overlay {
@@ -3795,9 +3797,10 @@ form input {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  width: 80%;
-  max-width: 500px;
+  width: 900px;
+  height: 500px;
   position: relative;
+  display: flex;
 }
 
 /* Modal close button */
@@ -3810,4 +3813,94 @@ form input {
   border-radius: 50%;
   cursor: pointer;
   font-size: 16px;
+}
+
+.modal-content h1 {
+  width: 295px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-right: 80px;
+}
+
+.modal-content h3 {
+  width: 375px;
+  color: #504f4f;
+  font-family: "General Sans";
+  font-size: 18px;
+  line-height: 26px;
+}
+.insurance-popup-child {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 50px;
+}
+
+.popup_table{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+.table_srql{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: solid 1px grey;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+}
+.insurace_right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.popup_table h5{
+  width: 130px;
+  color: #171717;
+font-family: "General Sans";
+font-size: 18px;
+font-weight: 500;
+line-height: 26px; 
+}
+
+
+.table_srql span {
+  font-size: 18px;
+}
+
+.selected .table_srql {
+  background: #6ADAB3; 
+}
+
+.selected .table_srql img {
+  display: block;
+}
+
+.border_popup{
+  width: 1px;
+  height: 460px;
+  border:  solid 1px rgb(212, 212, 212);
+  margin-left: 10px;
+}
+.inurance_border{
+  width: 1px;
+  height: 90px;
+  border:  solid 1px gainsboro;
+  position: absolute;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
