@@ -8,6 +8,7 @@ function InsurancePopup({ isOpen, onClose }) {
   const [selectedTable, setSelectedTable] = useState(1);
   const [activeChild, setActiveChild] = useState(null);
   const [date, setDate] = useState(new Date());
+  const [selectedTime, setSelectedTime] = useState('09:00'); // Default time
 
   if (!isOpen) return null;
 
@@ -23,6 +24,18 @@ function InsurancePopup({ isOpen, onClose }) {
   const formatDate = (date) => {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString(undefined, options);
+  };
+
+  // Saat seçimlərini yaratmaq üçün köməkçi funksiya
+  const generateTimeOptions = () => {
+    const times = [];
+    for (let hour = 0; hour < 24; hour++) {
+      for (let minute = 0; minute < 60; minute += 30) {
+        const formattedTime = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
+        times.push(formattedTime);
+      }
+    }
+    return times;
   };
 
   return (
@@ -95,7 +108,7 @@ function InsurancePopup({ isOpen, onClose }) {
 
         <div className="border_popup"></div>
 
-        <div className={`insurance ${selectedTable === 1 ? 'visible' : ''}`}>
+        <div className={`insurance ${selectedTable === 1 ? 'visible' : 'invisible'}`}>
           <div className="insurance_child">
             <div
               className={`insurance_child-srql ${activeChild === 1 ? 'active' : ''}`}
@@ -135,7 +148,7 @@ function InsurancePopup({ isOpen, onClose }) {
           <button className="insurance_child-srql_btn">Select Time</button>
         </div>
 
-        <div className={`time_date ${selectedTable === 2 ? 'visible' : ''}`}>
+        <div className={`time_date ${selectedTable === 2 ? 'visible' : 'invisible'}`}>
           <p>Select Date & Time</p>
           <Calendar
             onChange={setDate}
@@ -144,12 +157,25 @@ function InsurancePopup({ isOpen, onClose }) {
           <LocationSelect />
           <div className="time">
             <h3>{formatDate(date)}</h3>
-            <h4></h4>
+            <h4>
+              <select 
+                value={selectedTime} 
+                onChange={(e) => setSelectedTime(e.target.value)}
+              >
+                {generateTimeOptions().map((time, index) => (
+                  <option key={index} value={time}>
+                    {time}
+                  </option>
+                ))}
+              </select>
+            </h4>
           </div>
+          <button className="time_date_btn">Confirm</button>
         </div>
 
-        <div className={`contact_info ${selectedTable === 3 ? 'visible' : ''}`}>
-          <p>Contact Details: Provide your contact information or get in touch with us.</p>
+        <div className={`contact_info ${selectedTable === 3 ? 'visible' : 'invisible'}`}>
+          <p>Contact details</p>
+          
         </div>
       </div>
     </div>

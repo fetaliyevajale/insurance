@@ -4088,7 +4088,8 @@ select {
   font-size: 16px;
   line-height: 24px;
 }
-.time h4{
+
+.time h4 {
   width: 150px;
   height: 30px;
   border: solid 1px gainsboro;
@@ -4101,3 +4102,47 @@ select {
   font-size: 16px;
   line-height: 24px;
 }
+
+.time_date_btn {
+  width: 100px;
+  height: 30px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 24px;
+  background: #6ADAB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 10px;
+  margin-left: 300px;
+  cursor: pointer;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_info p {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-left: 30px;
+}
+.contact_info.visible {
+  display: block;
+}
+.contact_info {
+  display: none;
+}
+.insurance {
+  display: none;
+}
+
