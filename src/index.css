@@ -4123,9 +4123,11 @@ select {
 }
 
 .contact_info {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .contact_info p {
@@ -4139,10 +4141,146 @@ select {
 .contact_info.visible {
   display: block;
 }
-.contact_info {
-  display: none;
-}
 .insurance {
   display: none;
 }
 
+.contact_form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact_input{
+  width: 193px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+  text-align: center;
+}
+.contact_label{
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_input1{
+  width: 193px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -200px;
+text-align: center;
+}
+
+.contact_label1{
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+
+}
+.action_contact{
+  width: 450px;
+  margin-left: -100px;
+  text-align: center;
+}
+.action_label{
+  margin-left: -270px;
+  margin-top: 20px;
+}
+.action_number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -70px;
+}
+.select-name{
+  width: 120px;
+  margin-top: 30px;
+  margin-left: -30px;
+}
+.action-number{
+  width: 290px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: -190px;
+}
+.message{
+  width: 450px;
+  height: 70px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 140px;
+}
+
+.message-btn{
+width: 130px;
+height: 40px;
+color: #171717;
+font-family: "General Sans";
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+border-radius: 24px;
+background: #6ADAB3;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
+margin-top: 20px;
+margin-left: 330px;
+cursor: pointer;
+}
+
+.new-module-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 37, 68, 0.09);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.new-module-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.new-module-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
