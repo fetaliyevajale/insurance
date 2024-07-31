@@ -4138,9 +4138,11 @@ select {
   line-height: 26px;
   margin-left: 30px;
 }
+
 .contact_info.visible {
   display: block;
 }
+
 .insurance {
   display: none;
 }
@@ -4153,7 +4155,7 @@ select {
   margin-top: 40px;
 }
 
-.contact_input{
+.contact_input {
   width: 193px;
   height: 40px;
   display: flex;
@@ -4162,23 +4164,25 @@ select {
   margin-left: -100px;
   text-align: center;
 }
-.contact_label{
+
+.contact_label {
   width: 130px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contact_input1{
+
+.contact_input1 {
   width: 193px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -200px;
-text-align: center;
+  text-align: center;
 }
 
-.contact_label1{
+.contact_label1 {
   width: 130px;
   display: flex;
   align-items: center;
@@ -4186,27 +4190,32 @@ text-align: center;
   margin-left: -100px;
 
 }
-.action_contact{
+
+.action_contact {
   width: 450px;
   margin-left: -100px;
   text-align: center;
 }
-.action_label{
+
+.action_label {
   margin-left: -270px;
   margin-top: 20px;
 }
-.action_number{
+
+.action_number {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: -70px;
 }
-.select-name{
+
+.select-name {
   width: 120px;
   margin-top: 30px;
   margin-left: -30px;
 }
-.action-number{
+
+.action-number {
   width: 290px;
   height: 45px;
   display: flex;
@@ -4217,7 +4226,8 @@ text-align: center;
   margin-top: 30px;
   margin-left: -190px;
 }
-.message{
+
+.message {
   width: 450px;
   height: 70px;
   margin-top: 20px;
@@ -4233,25 +4243,26 @@ text-align: center;
   margin-right: 140px;
 }
 
-.message-btn{
-width: 130px;
-height: 40px;
-color: #171717;
-font-family: "General Sans";
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-border-radius: 24px;
-background: #6ADAB3;
-display: flex;
-justify-content: center;
-align-items: center;
-border: none;
-margin-top: 20px;
-margin-left: 330px;
-cursor: pointer;
+.message-btn {
+  width: 130px;
+  height: 40px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 24px;
+  background: #6ADAB3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+  margin-left: 330px;
+  cursor: pointer;
 }
 
+/* NewModule hissesi */
 .new-module-overlay {
   position: fixed;
   top: 0;
@@ -4270,17 +4281,70 @@ cursor: pointer;
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
+  width: 454px;
+  height: 474px;
   position: relative;
 }
 
+.newModulH1 {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #f5f2f2;
+  margin-left: 130px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newModulH2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newModulH3 {
+  width: 300px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.newModulH4 {
+  width: 374px;
+  color: #3a3a3a;
+  text-align: center;
+  font-family: "General Sans";
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
 .new-module-close {
+  width: 160px;
+  height: 40px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 410px;
+  right: 150px;
   background: none;
   border: none;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid #6ADAB3;
+  color: #6ADAB3;
+  font-family: "General Sans";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
 }
