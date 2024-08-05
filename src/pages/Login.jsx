@@ -29,7 +29,7 @@ function Login() {
   };
 
   const handleSpanClick = () => {
-    navigate("/other");
+    navigate("/other-page");
   };
 
   return (

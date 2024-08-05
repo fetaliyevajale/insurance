@@ -1,6 +1,13 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 function FooterFoot() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
+
   return (
     <div className="FooterFoot">
       <div className="FooterFootHeader">
@@ -20,19 +27,17 @@ function FooterFoot() {
           </div>
           <h3>
             We work with you to customize a policy that fits your budget and
-            your needs.{" "}
+            your needs.
           </h3>
         </div>
-        <div id="childDiv">
-          <div id="childDivChild">Navigate</div>
-          <div>Services</div>
-          <div>About Us</div>
-          <div>Contact Us</div>
-          <div>Careers</div>
+        <div className="FooterFootLinks">
+          <div >Services</div>
+          <div >About Us</div>
+          <div >Contact Us</div>
+          <div onClick={() => handleNavigate('/careers')}>Careers</div>
         </div>
 
-        <div id="chilDivLeft">
-          <div id="chilDivLeftparent">Link</div>
+        <div className="FooterFootTerms">
           <div>Privacy Policy</div>
           <div>Term & Conditioner</div>
           <div>FAQs</div>
@@ -40,8 +45,7 @@ function FooterFoot() {
 
         <div className="FootBtn">
           <h4>Newsletter</h4>
-
-          <div id="FootBtnChild">Enter your email address</div>
+          <div>Enter your email address</div>
           <div id="FootDiv"></div>
         </div>
         <button className="FootBtnChildBtn">Submit</button>
