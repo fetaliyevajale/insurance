@@ -1,5 +1,5 @@
-import React, { useState } from 'react'; // useState-in import edildiyini təmin edin
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; // NavLink-in import edildiyini təmin edin
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom'; 
 import "./index.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -8,6 +8,9 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Careers from "./pages/Careers"; 
+import JobDetail from './pages/JobDetail'; 
+import Blogs from './pages/Blogs';
+import BlogDetail from './pages/BlogDetail';
 import OtherPage from './pages/OtherPage';
 import InsurancePopup from "./components/InsurancePopup";
 
@@ -52,9 +55,13 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/careers" element={<Careers />} /> {/* Add the Careers route */}
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/job-detail" element={<JobDetail />} /> 
+          <Route path="/Blogs" element={<Blogs />} /> 
+          <Route path="/Blog-Detail" element={<BlogDetail />} /> 
           <Route path="/insurance-popup" element={<InsurancePopup />} />
           <Route path="/other-page" element={<OtherPage />} />
+          
         </Routes>
       </div>
     </Router>

@@ -1,17 +1,9 @@
 import React from 'react'
 
-export default function AboutFooter() {
+export default function JobDetailFooter() {
   return (
-    <div className="FooterFoot">
-    <div className="FooterFootHeader">
-      <h2>Talk to an insurance agent today</h2>
-      <h4>
-        Learn more about the different types of insurance and to get a quote
-        for your specific needs.
-      </h4>
-      <button className="footbtn">Get Started</button>
-    </div>
-
+    <div className='JobDetailFooter'>
+    {" "}
     <div className="FooterFootParent">
       <div className="FooterFootParentRght">
         <div className="FooterFootChild">
@@ -29,7 +21,6 @@ export default function AboutFooter() {
         <div>About Us</div>
         <div>Contact Us</div>
         <div>Careers</div>
-        
       </div>
 
       <div id="chilDivLeft">

@@ -16,13 +16,13 @@ function FooterFoot() {
           Learn more about the different types of insurance and to get a quote
           for your specific needs.
         </h4>
-        <button className="footbtn">Get Started</button>
+        <button className="footbtn" onClick={() => handleNavigate('/get-started')}>Get Started</button>
       </div>
 
       <div className="FooterFootParent">
         <div className="FooterFootParentRght">
           <div className="FooterFootChild">
-            <img src="/resim1.png" alt="resim1" />
+            <img src="/resim1.png" alt="Insurance" />
             <h4>Insurance</h4>
           </div>
           <h3>
@@ -31,16 +31,19 @@ function FooterFoot() {
           </h3>
         </div>
         <div className="FooterFootLinks">
-          <div >Services</div>
-          <div >About Us</div>
-          <div >Contact Us</div>
+          <div>Services</div>
+          <div>About Us</div>
+          <div>Contact Us</div>
           <div onClick={() => handleNavigate('/careers')}>Careers</div>
+          <div onClick={() => handleNavigate('/job-detail')}>Job Detail</div>
+          <div onClick={() => handleNavigate('/blogs')}>Blogs</div>
+          <div onClick={() => handleNavigate('/blog-detail')}>Blog Detail</div>
         </div>
 
         <div className="FooterFootTerms">
-          <div>Privacy Policy</div>
-          <div>Term & Conditioner</div>
-          <div>FAQs</div>
+          <div onClick={() => handleNavigate('/privacy-policy')}>Privacy Policy</div>
+          <div onClick={() => handleNavigate('/terms-and-conditions')}>Terms & Conditions</div>
+          <div onClick={() => handleNavigate('/faqs')}>FAQs</div>
         </div>
 
         <div className="FootBtn">
@@ -48,19 +51,19 @@ function FooterFoot() {
           <div>Enter your email address</div>
           <div id="FootDiv"></div>
         </div>
-        <button className="FootBtnChildBtn">Submit</button>
+        <button className="FootBtnChildBtn" onClick={() => handleNavigate('/submit-newsletter')}>Submit</button>
       </div>
       <div className="defaultFooter">
         <h6 id="footH6">© 2022 Company Name® Global Inc.</h6>
         <div id="footDivChild">
-          <img src="/resim30.png" alt="resim30" />
-          <img src="/resim31.png" alt="resim31" />
-          <img src="/resim32.png" alt="resim32" />
-          <img src="/resim33.png" alt="resim33" />
+          <img src="/resim30.png" alt="social-icon" />
+          <img src="/resim31.png" alt="social-icon" />
+          <img src="/resim32.png" alt="social-icon" />
+          <img src="/resim33.png" alt="social-icon" />
         </div>
         <div className="defaultFooterChild">
-          <div>Terms of Service</div>
-          <div>Privacy Policy</div>
+          <div onClick={() => handleNavigate('/terms-of-service')}>Terms of Service</div>
+          <div onClick={() => handleNavigate('/privacy-policy')}>Privacy Policy</div>
         </div>
       </div>
     </div>
