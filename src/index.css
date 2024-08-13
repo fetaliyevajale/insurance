@@ -1708,13 +1708,14 @@ h6.visible {
 
 .loginRightBtn {
   width: 520px;
-  height: 46px;
+  height: 50px;
   border-radius: 24px;
   border: none;
   outline: none;
   border-radius: 24px;
   background: #6ADAB3;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .loginRightBorder {
@@ -1729,6 +1730,7 @@ h6.visible {
   font-family: "General Sans";
   font-size: 14px;
   line-height: 22px;
+  cursor: pointer;
 }
 
 .loginRightBorderChild {
@@ -1754,6 +1756,7 @@ h6.visible {
   gap: 70px;
   border-radius: 16px;
   border: 1px solid #F5F5F5;
+  cursor: pointer;
 }
 
 .loginRightFootImg h6 {
@@ -1965,6 +1968,7 @@ h6.visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 70px;
 }
 
 .otherPageRootRightForm form {
@@ -2008,6 +2012,7 @@ h6.visible {
   border-radius: 50%;
   border: solid 1px black;
   background-color: #6ADAB3;
+  cursor: pointer;
 }
 
 .otherPageRootRightCrl h5 {
@@ -2019,13 +2024,14 @@ h6.visible {
 
 .otherPageRootRightBtn {
   width: 520px;
-  height: 46px;
+  height: 50px;
   border-radius: 24px;
   border: none;
   outline: none;
   border-radius: 24px;
   background: #6ADAB3;
   margin-top: 48px;
+  cursor: pointer;
 }
 
 .otherPgeRootBorder {
@@ -2048,6 +2054,7 @@ h6.visible {
   font-family: "General Sans";
   font-size: 14px;
   line-height: 22px;
+  cursor: pointer;
 }
 
 .end {
@@ -2069,6 +2076,7 @@ h6.visible {
   gap: 80px;
   margin-top: 32px;
   margin-left: -30px;
+  cursor: pointer;
 
 }
 
