@@ -1,9 +1,12 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { useNavigate } from "react-router-dom";
+import BlogsFooter from "../BlogsFooter";
 
 export default function Blogs() {
   const swiperRef = useRef(null);
+  const navigate = useNavigate(); // `useNavigate` hook-u
 
   const handlePrevClick = () => {
     if (swiperRef.current) {
@@ -21,6 +24,10 @@ export default function Blogs() {
     if (swiperRef.current) {
       swiperRef.current.swiper.slideTo(index);
     }
+  };
+
+  const handleImageClick = () => {
+    navigate("/blog-detail"); // İstədiyiniz URL-ə yönləndirir
   };
 
   const totalSlides = 12;
@@ -46,7 +53,8 @@ export default function Blogs() {
             <SwiperSlide key={index}>
               <div id="swiperSlideblogs">
                 <div className="blogsChild1">
-                  <div id="blogsChild1">
+               
+                  <div id="blogsChild1" onClick={handleImageClick}>
                     <img src="/Image.png" alt="Image" />
                     <h2>22/06/2023</h2>
                     <h3>How do I choose the right insurance for me?</h3>
@@ -154,8 +162,9 @@ export default function Blogs() {
 
           <div className="srql2">
           <h2>Disability insurance</h2>
-          
+          <h2>Disability insurance</h2>
           </div>
+
         </div>
         
       </div>
@@ -182,6 +191,8 @@ export default function Blogs() {
           <img src="/Last.png" alt="Last" />
         </div>
       </div>
+      <div className="foter"></div>
+      <BlogsFooter />
     </div>
   );
 }

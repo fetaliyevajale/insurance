@@ -4910,7 +4910,7 @@ select {
 
 .srql h2 {
   width: 120px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -4927,7 +4927,7 @@ select {
 
 .srql h3 {
   width: 140px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -4944,7 +4944,7 @@ select {
 
 .srql h4 {
   width: 100px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -4958,13 +4958,15 @@ select {
   align-items: center;
   gap: 8px;
 }
-.srql1{
+
+.srql1 {
   display: flex;
   gap: 10px;
 }
-.srql1 h2{
+
+.srql1 h2 {
   width: 80px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -4978,9 +4980,10 @@ select {
   align-items: center;
   gap: 8px;
 }
-.srql1 h3{
+
+.srql1 h3 {
   width: 100px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -4995,9 +4998,9 @@ select {
   gap: 8px;
 }
 
-.srql1 h4{
+.srql1 h4 {
   width: 150px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -5012,14 +5015,14 @@ select {
   gap: 8px;
 }
 
-.srql2{
+.srql2 {
   display: flex;
   gap: 10px;
 }
 
-.srql2 h2{
+.srql2 h2 {
   width: 160px;
-  height:40px;
+  height: 40px;
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   color: #525252;
@@ -5032,4 +5035,187 @@ select {
   justify-content: center;
   align-items: center;
   gap: 8px;
+}
+
+/* 
+.foter{
+  width: 20%;
+  height: 30px;
+  margin-left: 300px;
+  margin-top: 20px;
+} */
+
+.blogDetail {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  padding: 0px 104px 30px 104px;
+  justify-content: center;
+  align-items: center;
+  gap: 88px;
+}
+
+.image {
+  width: 1200px;
+  height: 601px;
+}
+
+.card-blogDeatil-card {
+  display: flex;
+  width: 996px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.card-blogDeatil-card h3 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.card-blogDeatil-card h2 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.card-blogDeatil-card h4 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.card-row-3 h1 {
+  margin-top: 6px;
+  width: 100%;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.card-row-b h1 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card-row-b h3 {
+  width: 776px;
+  display: flex;
+  align-items: center;
+}
+
+#imgCard {
+  margin-bottom: 25px;
+}
+
+.card-row-h h1 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+}
+
+.card-row-h h2 {
+  width: 868px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.row-blog {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.BlogDetailFoter {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 88px;
+}
+
+.BlogDetailFoter h1 {
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  margin-left: -960px;
+}
+
+.roedetal {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.rowDetal {
+  display: flex;
+  padding: 12px 12px 20px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 20px;
+  background: #FFF;
+}
+
+.rowDetal img {
+  width: 360px;
+  height: 251px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.rowDetal h3 {
+  width: 360px;
+  color: #171717;
+  font-family: "General Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#row-ul {
+  display: flex;
+  align-items: center;
+  margin-right: 140px;
+}
+
+#row-ul li {
+  width: 110px;
+  color: #525252;
+  font-family: "General Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
 }

@@ -37,7 +37,6 @@ function FooterFoot() {
           <div onClick={() => handleNavigate('/careers')}>Careers</div>
           <div onClick={() => handleNavigate('/job-detail')}>Job Detail</div>
           <div onClick={() => handleNavigate('/blogs')}>Blogs</div>
-          <div onClick={() => handleNavigate('/blog-detail')}>Blog Detail</div>
         </div>
 
         <div className="FooterFootTerms">
