@@ -61,8 +61,8 @@ function FooterFoot() {
           <img src="/resim33.png" alt="social-icon" />
         </div>
         <div className="defaultFooterChild">
-          <div onClick={() => handleNavigate('/terms-of-service')}>Terms of Service</div>
-          <div onClick={() => handleNavigate('/privacy-policy')}>Privacy Policy</div>
+          <div>Terms of Service</div>
+          <div>Privacy Policy</div>
         </div>
       </div>
     </div>

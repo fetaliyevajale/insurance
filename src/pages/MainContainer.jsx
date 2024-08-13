@@ -3,8 +3,12 @@ import React from 'react';
 function MainContainer({ showDescriptions, toggleDescription }) {
   return (
     <div className="mainContainer">
+
+      
       <div className="mainContainerDiv1">
-        <h1>We’re committed to keeping your information secure.</h1>
+         <div className="rov-main">
+         <h1>We’re committed to keeping your information secure.</h1>
+         </div>
         <h5>
           With a 10-point security protocol and data encryption in place, we
           continuously work to protect your account with the highest standards

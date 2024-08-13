@@ -12,6 +12,7 @@ body {
 
 .container {
   width: 1240px;
+  height: 100vh;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -93,6 +94,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .home {
@@ -130,13 +132,14 @@ body {
 }
 
 .HomeBtn {
-  width: 130px;
-  height: 40px;
+  width: 160px;
+  height: 50px;
   border-radius: 24px;
   background: #6ADAB3;
   border: none;
   outline: none;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .HomeLeft {
@@ -163,6 +166,7 @@ body {
 
 .homeTopLink div {
   margin-left: 85px;
+  cursor: pointer;
 }
 
 .HomeTopH1 h1 {
@@ -181,6 +185,7 @@ body {
   justify-content: center;
   margin-top: 50px;
   flex-wrap: wrap;
+
 }
 
 .HomeTopSquare1 {
@@ -193,6 +198,7 @@ body {
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .HomeTopSquare1:hover {
@@ -297,6 +303,7 @@ body {
     text-decoration: none;
     border: none;
     margin-left: 100px;
+    cursor: pointer;
   }
 
   .headerul li button:hover {
@@ -482,6 +489,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #FFF;
+  margin-top: 60px;
 }
 
 .image {
@@ -489,7 +497,11 @@ body {
 }
 
 .image img {
-  width: 100%;
+  width: 80%;
+}
+
+.table {
+  margin-right: 100px;
 }
 
 .table h2 {
@@ -589,12 +601,13 @@ body {
 .mainContainer {
   width: 100%;
   display: flex;
-  padding: 80px 104px;
+  padding: 0px 40px 104px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 88px;
   background-color: #FFF;
+  margin-top: -150px;
 }
 
 .mainContainerDiv1 h1 {
@@ -604,6 +617,11 @@ body {
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
+  /* margin-top: 100px; */
+}
+
+.rov-main {
+  margin-top: 150px;
 }
 
 .mainContainerDiv1 h5 {
@@ -615,8 +633,12 @@ body {
   font-weight: 400;
   line-height: 26px;
   margin-top: 15px;
+  /* margin-top: 250px; */
 }
 
+.mainContainerDiv2 img {
+  margin-top: 240px;
+}
 
 .containerRoot {
   padding: 16px;
@@ -625,6 +647,7 @@ body {
   gap: 8px;
   border-radius: 16px;
   border: 1px solid #E5E5E5;
+  cursor: pointer;
 
 }
 
@@ -633,6 +656,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .containerRow h1 {
@@ -741,43 +765,20 @@ h6.visible {
 
 .btnContent {
   display: flex;
-  padding: 12px 32px;
+  width: 170px;
+  height: 50px;
+  margin-right: 1010px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  border: 1px solid #6ADAB3;
+  border: 18px solid #6ADAB3;
   background-color: #FFF;
-  margin-top: 20px;
   color: #6ADAB3;
   font-family: "General Sans";
-  font-size: 14px;
+  font-size: 1px;
   font-weight: 500;
   line-height: 22px;
-}
-
-.sekilcontent {
-  margin-left: 64px;
-  margin-top: 56px;
-}
-
-.sekilcontent img {
-  width: 360px;
-  height: 251px;
-  border-radius: 10px;
-}
-
-.sekilcontentDiv {
-  width: 360px;
-  height: 56px;
-  margin-top: 16px;
-}
-
-.sekilcontentDiv h3 {
-  color: #171717;
-  font-family: "General Sans";
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
+  cursor: pointer;
 }
 
 
@@ -844,31 +845,9 @@ h6.visible {
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
+  cursor: pointer;
 }
 
-.sekilcontent {
-  margin: 16px;
-  flex: 100%;
-  max-width: 360px;
-}
-
-.sekilcontent img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.sekilcontentDiv {
-  margin-top: 16px;
-}
-
-.sekilcontentDiv h3 {
-  color: #171717;
-  font-family: "General Sans";
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
-}
 
 .rootDiv {
   display: flex;
@@ -958,8 +937,8 @@ h6.visible {
 }
 
 .divH3btn {
-  width: 150px;
-  height: 30px;
+  width: 170px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -967,6 +946,7 @@ h6.visible {
   background: #6ADAB3;
   border: none;
   margin-top: 56px;
+  cursor: pointer;
 }
 
 /* Telefon Ekranları için Responsive  */
@@ -1024,8 +1004,11 @@ h6.visible {
   height: 332px;
   display: flex;
   padding: 20px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   gap: 16px;
+  margin-bottom: 100px;
+  cursor: pointer;
 }
 
 .footerimg img {
@@ -1039,6 +1022,7 @@ h6.visible {
   background-color: #FFF;
   margin-left: 15px;
 }
+
 
 .footerBootom h3 {
   width: 300px;
@@ -1152,10 +1136,16 @@ h6.visible {
 
 .parentdiv {
   display: flex;
+  width: 90%;
+  height: 100px;
+  border-radius: 20px;
   align-items: center;
   justify-content: space-between;
   margin-left: -40;
   gap: 20px;
+  background-color: #fff;
+  margin-left: 90px;
+  cursor: pointer;
 }
 
 .parentdiv h2 {
@@ -1171,11 +1161,16 @@ h6.visible {
 }
 
 .tableeH {
+  width: 90%;
+  height: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: -380px;
+  margin-left: 90px;
+  background-color: #FFF;
+  margin-top: 10px;
+  border-radius: 20px;
 }
 
 .tableeH h4 {
@@ -1184,7 +1179,7 @@ h6.visible {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  margin-right: 10px;
+  margin-right: 440px;
 }
 
 .tableeH h5 {
@@ -1194,12 +1189,12 @@ h6.visible {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  margin-left: 220px;
+  margin-left: -220px;
 }
 
 .btnfoot {
-  width: 150px;
-  height: 30px;
+  width: 170px;
+  height: 50px;
   border-radius: 20px;
   border: 1px solid #6ADAB3;
   background-color: #fff;
@@ -1208,6 +1203,8 @@ h6.visible {
   align-items: center;
   margin-left: 600px;
   color: #6ADAB3;
+  margin-top: 40px;
+  cursor: pointer;
 }
 
 @media (max-width: 480px) {
@@ -1273,8 +1270,7 @@ h6.visible {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background-color: #f0f0f0ff;
-  margin-top: 60px;
+  background-color: #f3f3f3;
 }
 
 .FooterFootHeader {
@@ -1295,6 +1291,7 @@ h6.visible {
 }
 
 .FooterFootLinks div {
+  cursor: pointer;
   margin-top: 20px;
 }
 
@@ -1304,6 +1301,7 @@ h6.visible {
 
 .FooterFootTerms div {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .FooterFootHeader h2 {
@@ -1330,13 +1328,15 @@ h6.visible {
 
 .footbtn {
   display: flex;
-  padding: 16px 32px;
+  width: 170px;
+  height: 50px;
   justify-content: center;
   align-items: center;
   border-radius: 24px;
   background: #FFF;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .FooterFootParent {
@@ -1353,11 +1353,14 @@ h6.visible {
 
 .FooterFootParentRght h3 {
   width: 356px;
+  height: 52px;
   color: #525252;
   font-family: "General Sans";
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 26px;
-  text-align: center;
+  margin-left: 80px;
 }
 
 .FooterFootChild {
@@ -1370,7 +1373,10 @@ h6.visible {
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
+  margin-right: 240px;
 }
+
+
 
 #childDiv {
   display: flex;
@@ -1430,16 +1436,17 @@ h6.visible {
 }
 
 .FootBtnChildBtn {
-  width: 100px;
-  height: 30px;
+  width: 170px;
+  height: 45px;
   color: #171717;
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   margin-top: 120px;
-  border-radius: 20px;
+  border-radius: 30px;
   background: #6ADAB3;
   border: none;
+  cursor: pointer;
 }
 
 #FootDiv {
@@ -1467,6 +1474,7 @@ h6.visible {
 #footDivChild {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 .defaultFooterChild {
@@ -1479,7 +1487,9 @@ h6.visible {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  cursor: pointer;
 }
+
 
 
 
@@ -5217,5 +5227,5 @@ select {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
 }

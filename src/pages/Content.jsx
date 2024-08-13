@@ -1,49 +1,45 @@
 import React from "react";
 
-const articles = [
-  {
-    imgSrc: "/resim18.jpeg",
-    title: "The rise of the gig economy and its impact on insurance",
-    date: "Sep 31, 2023",
-    author: "Erin Bator",
-  },
-  {
-    imgSrc: "/resim19.jpeg",
-    title: "The changing demographics of the population and its impact on insurance",
-    date: "Sep 31, 2023",
-    author: "Wilson Septimus",
-  },
-  {
-    imgSrc: "/resim20.jpeg",
-    title: "The increasing cost of healthcare and its impact on insurance",
-    date: "Sep 31, 2023",
-    author: "Tiana Westervelt",
-  },
-];
-
 function Content() {
   return (
-    <div>
-      <div className="rotContent">
-        <div className="content">
-          <h3>Latest article</h3>
-          <button className="btnContent">Discover More</button>
-        </div>
+    <div className="rotContent">
+      <div className="BlogDetailFoter">
+        <h1>Latest artcile</h1>
+        <button className="btnContent">Discover More</button>
+        <div className="roedetal">
+          <div className="rowDetal">
+            <img src="/532711a31915aimg.jpeg" alt="degree" />
+            <h3>The rise of the gig economy and its impact on insurance</h3>
+            <ul id="row-ul">
+              <li>Sep 31 , 2023</li>
+              <li>Erin Bator</li>
+            </ul>
+          </div>
 
-        <div id="hDiv">
-          {articles.map((article, index) => (
-            <div className="sekilcontent" key={index}>
-              <img src={article.imgSrc} alt={`image${index + 1}`} />
-              <div className="sekilcontentDiv">
-                <h3>{article.title}</h3>
-                <div className="rootDiv">
-                  <div id="parentdiv1">{article.date}</div>
-                  <div id="parentdiv2">{article.author}</div>
-                </div>
-              </div>
-            </div>
-          ))}
+          <div className="rowDetal">
+            <img src="8518b135bd718eimg2.jpeg" alt="degree" />
+            <h3>
+              The changing demographics of the population and its impact on
+              insurance
+            </h3>
+            <ul id="row-ul">
+              <li>Sep 31 , 2023</li>
+              <li>Wilson Septimus</li>
+            </ul>
+          </div>
+
+          <div className="rowDetal">
+            <img src="/16197d2cd3f989dbimg3.jpeg" alt="degree" />
+            <h3>
+              The increasing cost of healthcare and its impact on insurance
+            </h3>
+            <ul id="row-ul">
+              <li>Sep 31 , 2023</li>
+              <li>Tiana Westervelt</li>
+            </ul>
+          </div>
         </div>
+        {/* <div className="foter"></div> */}
       </div>
     </div>
   );
