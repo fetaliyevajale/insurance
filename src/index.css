@@ -2153,8 +2153,8 @@ h6.visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 128px;
-  height: 30px;
+  width: 170px;
+  height: 50px;
   color: #6ADAB3;
   font-family: "General Sans";
   font-size: 18px;
@@ -2164,6 +2164,7 @@ h6.visible {
   border-radius: 24px;
   border: 1px solid #E5E5E5;
   background: #F8F8F8;
+  cursor: pointer;
 }
 
 .servicesRootChild h2 {
@@ -2219,8 +2220,9 @@ h6.visible {
 }
 
 .servicesRootStartRight button {
-  width: 163px;
-  height: 46px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2321,8 +2323,9 @@ h6.visible {
 }
 
 .servicesHeaderLeft button {
-  width: 163px;
-  height: 46px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2421,8 +2424,9 @@ h6.visible {
 
 .serviceMainRight button {
   display: flex;
-  width: 150px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   color: #171717;
@@ -2510,8 +2514,9 @@ h6.visible {
 }
 
 .servicesContentLeft button {
-  width: 150px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2588,12 +2593,16 @@ h6.visible {
 
 .ServicesSection h1 {
   width: 100%;
+  height:80px ;
+ display: flex;
+ align-items: center;
   color: #171717;
   font-family: "General Sans";
   font-size: 48px;
   font-weight: 500;
   line-height: 56px;
-  margin-left: 40px;
+  margin-left: 90px;
+  margin-top: 10px;
 }
 
 .servicesSectionHeader {
@@ -2610,9 +2619,11 @@ h6.visible {
 
 .servicesSectionHeaderChild {
   width: 100%;
+  height: 96px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .servicesSectionHeaderChild h1 {
@@ -2641,13 +2652,15 @@ h6.visible {
 }
 
 .ServicesSection button {
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   color: #6ADAB3;
   font-family: "General Sans";
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   display: flex;
-  padding: 12px 32px;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
