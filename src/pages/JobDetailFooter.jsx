@@ -3,7 +3,7 @@ import React from 'react'
 export default function JobDetailFooter() {
   return (
     <div className='JobDetailFooter'>
-    {" "}
+
     <div className="FooterFootParent">
       <div className="FooterFootParentRght">
         <div className="FooterFootChild">
