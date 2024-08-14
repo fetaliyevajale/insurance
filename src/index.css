@@ -2754,8 +2754,9 @@ h6.visible {
 }
 
 .servicesFooter button {
-  width: 150px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   border-radius: 24px;
   color: #171717;
   font-family: "General Sans";
@@ -2814,8 +2815,9 @@ h6.visible {
 }
 
 .aboutChild button {
-  width: 110px;
-  height: 26px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   color: #6ADAB3;
   font-family: "General Sans";
   font-size: 18px;
@@ -2916,7 +2918,9 @@ h6.visible {
 
 .aboutHeaderHv button {
   display: flex;
-  padding: 16px 32px;
+  width: 170px;
+  height: 50px;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   border-radius: 24px;
@@ -2959,7 +2963,9 @@ h6.visible {
   }
 
   .aboutHeaderHv button {
-    padding: 12px 24px;
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
     font-size: 14px;
     margin-right: 250px;
   }
@@ -3023,6 +3029,7 @@ h6.visible {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  cursor: pointer;
 }
 
 .aboutMainContextDiv img {
@@ -3217,6 +3224,7 @@ h6.visible {
   border-radius: 10px;
   border: solid 1px rgb(219, 217, 217);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .aboutSectionSqr:hover {
@@ -3325,8 +3333,8 @@ h6.visible {
 }
 
 .faqS {
-  width: 100px;
-  height: 46px;
+  width: 170px;
+  height: 50px;
   text-align: center;
   color: #6ADAB3;
   font-family: "General Sans";
@@ -3384,6 +3392,7 @@ h6.visible {
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 24px;
+  cursor: pointer;
 }
 
 .faqMainTextChild {
@@ -3575,6 +3584,7 @@ h6.visible {
   align-items: center;
   border-radius: 50%;
   border: solid 1px gray;
+  cursor: pointer;
 }
 
 .contactRoot {
@@ -3673,6 +3683,7 @@ form input {
   line-height: 24px;
   margin-top: -60px;
   margin-left: 70px;
+  cursor: pointer;
 }
 
 /* For screens 480px wide and below */
@@ -4295,8 +4306,8 @@ select {
 }
 
 .message-btn {
-  width: 130px;
-  height: 40px;
+  width: 170px;
+  height: 50px;
   color: #171717;
   font-family: "General Sans";
   font-size: 16px;
@@ -4673,6 +4684,7 @@ select {
   border-radius: 24px;
   background: #6ADAB3;
   border: none;
+  cursor: pointer;
 }
 
 .JobDetailFooter {
@@ -4754,6 +4766,7 @@ select {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
+  cursor: pointer;
 }
 
 #blogsChild1 h2 {
@@ -4936,6 +4949,7 @@ select {
 .srql {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 .srql h2 {
@@ -4992,6 +5006,7 @@ select {
 .srql1 {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 .srql1 h2 {
@@ -5048,6 +5063,7 @@ select {
 .srql2 {
   display: flex;
   gap: 10px;
+  cursor: pointer;
 }
 
 .srql2 h2 {
@@ -5067,13 +5083,13 @@ select {
   gap: 8px;
 }
 
-/* 
+
 .foter{
   width: 20%;
   height: 30px;
   margin-left: 300px;
   margin-top: 20px;
-} */
+} 
 
 .blogDetail {
   display: flex;

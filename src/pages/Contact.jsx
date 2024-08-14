@@ -102,7 +102,8 @@ export default function Contact() {
       </div>
       <button className="contactbutton">Submit</button>
 
-      
+      <div className="foter"></div>
+
       <div className="FooterFootParent">
         <div className="FooterFootParentRght">
           <div className="FooterFootChild">
@@ -149,7 +150,9 @@ export default function Contact() {
           <div>Terms of Service</div>
           <div>Privacy Policy</div>
         </div>
+        
       </div>
+      
     </div>
   );
 }

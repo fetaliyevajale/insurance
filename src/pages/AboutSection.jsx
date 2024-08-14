@@ -40,6 +40,7 @@ export default function AboutSection() {
           </div>
         ))}
       </div>
+      <div className="foter"></div>
     </div>
   );
 }
