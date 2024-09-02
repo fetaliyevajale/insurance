@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function JobDetailFooter() {
   return (
-    <div className='JobDetailFooter'>
-
+    <div className=''>
+    <div className="divjobdiv"></div>
     <div className="FooterFootParent">
       <div className="FooterFootParentRght">
         <div className="FooterFootChild">

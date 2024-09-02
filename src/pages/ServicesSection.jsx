@@ -15,8 +15,8 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
     },
     {
       question: "How much insurance do I need?",
@@ -25,8 +25,8 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
     },
     {
       question: "How do I file a claim?",
@@ -35,8 +35,8 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
     },
     {
       question: "What are the benefits of having insurance?",
@@ -45,8 +45,8 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
     },
     {
       question: "What is a deductible?",
@@ -55,8 +55,8 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
     },
     {
       question: "What factors affect the cost of insurance?",
@@ -65,9 +65,9 @@ export default function ServicesSection() {
         "Homeowners insurance: This type of insurance protects your home and belongings from damage caused by fire, theft, and other disasters.",
         "Car insurance: This type of insurance protects you financially in the event of an accident.",
         "Life insurance: This type of insurance provides financial support to your loved ones if you die.",
-        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured."
-      ]
-    }
+        "Health insurance: This type of insurance helps pay for your medical expenses if you get sick or injured.",
+      ],
+    },
   ];
 
   return (
@@ -75,11 +75,12 @@ export default function ServicesSection() {
       <h1>FAQs</h1>
       {faqData.map((faq, index) => (
         <div className="servicesSectionHeader" key={index}>
-          <div className="servicesSectionHeaderChild" onClick={() => handleToggle(index)}>
+          <div className="servicesSectionHeaderChild">
             <h1>{faq.question}</h1>
             <img
               src={openIndex === index ? "/resim27minus.png" : "/resim28.png"}
               alt={openIndex === index ? "resim27" : "resim28"}
+              onClick={() => handleToggle(index)} 
             />
           </div>
 

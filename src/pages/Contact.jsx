@@ -47,7 +47,7 @@ export default function Contact() {
 
         <div className="contactRoot">
           <div className="contactF">
-            <form action="">
+            <form action="" >
               <label htmlFor="text">
                 First Name <h2>*</h2>
               </label>

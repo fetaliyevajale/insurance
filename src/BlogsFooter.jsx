@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function BlogsFooter() {
   return (
-    <div className='BlogsFooter'>
-        <div className='JobDetailFooter'>
+    <div className=''>
+        <div className=''>
     {" "}
     <div className="FooterFootParent">
       <div className="FooterFootParentRght">
