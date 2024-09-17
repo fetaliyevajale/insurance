@@ -7,18 +7,12 @@
   list-style-type: none;
 }
 
-body {
-  font-family: "General Sans", sans-serif;
-}
-
 .container {
   width: 1240px;
   height: 100vh;
   max-width: 90%;
   margin: 0 auto;
 }
-
-
 
 .homePage {
   background: #151D38;
@@ -237,7 +231,7 @@ body {
   line-height: 24px;
 }
 
-/* planşet və daha kiçik ekranlar üçün */
+
 @media (max-width: 768px) {
   .homeMenu img {
     display: block;
@@ -429,6 +423,7 @@ body {
 
   .HomeLeft img {
     margin-left: -20px;
+    margin-bottom: 200px;
   }
 
   .headerul {
@@ -553,7 +548,11 @@ body {
   .image {
     margin-top: 50px;
   }
-
+  .image img{
+  width: 550px;
+  height: 500px;
+  margin-left: 320px;
+  }
   .table h2 {
     width: 316px;
     font-size: 36px;
@@ -714,6 +713,7 @@ h6.visible {
 
   .mainContainerDiv2 img {
     width: 100%;
+    margin-top: 350px;
   }
 
   .mainContainerDiv1 h5 {
@@ -735,6 +735,9 @@ h6.visible {
     width: 100%;
     font-size: 12px;
     line-height: 18px;
+  }
+  .table{
+    margin-left: 50px;
   }
 }
 
@@ -1082,6 +1085,55 @@ h6.visible {
   margin-left: 20px;
 }
 
+@media (max-width: 480px) {
+  .Footer {
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .Footer h1 {
+    width: 100%;
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .footerBootom {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .footerBootom h3, .footerBootom h5 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .footerParent {
+    width: 100%;
+    margin-left: -120px;
+    margin-top: 10px;
+    border: none;
+  }
+
+  .footerparetBootom img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
 .foot {
   display: flex;
   align-items: center;
@@ -1131,7 +1183,7 @@ h6.visible {
 
 .footerAsideParent {
   width: 100%;
-  margin-top: 56px;
+  margin-top: 24px;
 }
 
 .parentdiv {
@@ -1207,15 +1259,17 @@ h6.visible {
   cursor: pointer;
 }
 
+
 @media (max-width: 480px) {
   .FooterAside {
     padding: 20px;
   }
 
   .FooterAside h2 {
-    font-size: 24px;
-    line-height: 32px;
-    margin: 0 0 10px 0;
+    font-size: 28px;
+    line-height: 34px;
+    margin-left: 0;
+    text-align: center;
   }
 
   .footerAsideParent {
@@ -1223,41 +1277,51 @@ h6.visible {
   }
 
   .parentdiv {
-    flex-direction: column;
-    align-items: center;
+    
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    margin-left: 0;
     gap: 10px;
-    padding: 0 10px;
   }
 
   .parentdiv h2 {
-    font-size: 18px;
-  }
-
-  #image {
-    margin: 0;
-  }
-
-  .tableeH {
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  .tableeH h4 {
-    font-size: 14px;
-  }
-
-  .tableeH h5 {
-    width: 100%;
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 28px;
     margin-left: 20px;
   }
 
-  .btnfoot {
-    width: 150px;
-    height: 35px;
-    margin-left: 130px;
-    font-size: 14px;
+  #image {
+    margin-right: 20px;
+  }
 
+  .tableeH {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .tableeH h4 {
+    font-size: 16px;
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .tableeH h5 {
+    font-size: 16px;
+    margin-left: 20px;
+    width: auto;
+  }
+
+  .btnfoot {
+    width: 40%;
+    height: 45px;
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+  margin-left: 110px;
   }
 }
 
@@ -3864,7 +3928,7 @@ form input {
   padding: 20px;
   border-radius: 8px;
   width: 900px;
-  height: 500px;
+  height: 540px;
   position: relative;
   display: flex;
 }
@@ -4142,7 +4206,7 @@ select {
 }
 
 .time h3 {
-  width: 120px;
+  width: 160px;
   height: 30px;
   border: solid 1px gainsboro;
   border-radius: 15px;
@@ -5277,4 +5341,45 @@ select {
 }
 .divjobdiv{
   height: 60px;
+}
+
+@media (max-width: 480px) {
+  .roedetal {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .rowDetal {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .rowDetal img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px;
+  }
+
+  .rowDetal h3 {
+    width: 100%; 
+    font-size: 18px; 
+    line-height: 24px;
+  }
+
+  #row-ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0; 
+  }
+
+  #row-ul li {
+    width: auto; 
+    font-size: 14px; 
+    line-height: 20px;
+    margin-right: 300px;
+  }
+
+  .divjobdiv {
+    height: auto; 
+  }
 }
